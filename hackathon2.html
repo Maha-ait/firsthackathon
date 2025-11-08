@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Expiring Soon</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ff6b6b",
+            "background-light": "#f8f5f5",
+            "background-dark": "#230f0f",
+            "text-light": "#1d0c0c",
+            "text-dark": "#f8f5f5",
+            "text-secondary-light": "#a14545",
+            "text-secondary-dark": "#b88e8e",
+            "urgent": "#DC3545",
+            "warning": "#FFC107",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 flex items-center bg-background-light/80 dark:bg-background-dark/80 p-4 pb-3 backdrop-blur-sm justify-between border-b border-black/5 dark:border-white/5">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-text-light dark:text-text-dark hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Expiring Soon</h1>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-text-light dark:text-text-dark hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-2xl">sort</span>
+</button>
+</header>
+<main class="flex flex-1 flex-col gap-3 p-4">
+<div class="flex flex-col gap-4 bg-white dark:bg-black/20 p-4 rounded-lg">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-[60px] shrink-0" data-alt="A piece of raw chicken breast" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA33DVXf-gVF4fDCcclELUubXScay1GLQlWRXTWeIj_UlFQf1PbMLJSFADeI3v41BDJauj-uKo4Gp_l7yaMjYIV9KANLVGRwX3UuL6j00lCKwOkHukEdn92SNn3SYD-U9nC0pGwS3psZmWT0PrCC6zegBsV1SuFKVBUqS9QvEGrwCNf44C9AE2lPbhZRtTjL77Vt6prRgz8xjSkaP-oKGzzqt3Z0AK0jh_ZfLmjFAWPgkTivs3OpNO_PRAUgKqvXS2csJqK4SuP0qEX");'></div>
+<div class="flex flex-1 flex-col">
+<p class="text-base font-bold leading-normal">Chicken Breast</p>
+<p class="text-sm font-medium leading-normal text-urgent">Expires Tomorrow</p>
+<p class="text-sm font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">2 lbs</p>
+</div>
+</div>
+<button class="w-full text-center py-3 px-4 rounded-full bg-primary text-white text-base font-bold leading-normal tracking-[-0.015em] hover:bg-primary/90 transition-colors">Find Recipes</button>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-black/20 p-4 rounded-lg">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-[60px] shrink-0" data-alt="Fresh red tomatoes on the vine" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNsLM1u_Wys7svhfsYK3-e473vbJ_WCh3TiW-RKKY8WQHeGCxbE4oWa1A9ezmFXzxti6mG8EzcvTuGorvBkNnjRfaB1jiDucbDlHmWxu3hBtVb55lS7Latg6U8-bCDwzJKIZabw5KFDVLPv602omJA4PuWWE_qL-1_NSZrVjjnAZn-ZeZY1pSP05-wOvSmSPIwElV6yY1GzzNDpbpbBvLcUw3J2R0u4cuG2HOSIR06wNPjkbglGIsBUFnT-gZI3SYcZqLDx85Eo46m");'></div>
+<div class="flex flex-1 flex-col">
+<p class="text-base font-bold leading-normal">Tomatoes</p>
+<p class="text-sm font-medium leading-normal text-urgent">Expires in 2 days</p>
+<p class="text-sm font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">3 items</p>
+</div>
+</div>
+<button class="w-full text-center py-3 px-4 rounded-full bg-primary text-white text-base font-bold leading-normal tracking-[-0.015em] hover:bg-primary/90 transition-colors">Find Recipes</button>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-black/20 p-4 rounded-lg">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-[60px] shrink-0" data-alt="A bunch of fresh spinach leaves" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9mnEoM7Mtmvs4tjYKWp684s7zrQvqx5i_fpcjT7gV63Ph09Z3seJ1aK0dhreOOy_pOHl_-WIttjtcwAzgx0BZGKBRIZAuqi6ee-FRDpfOkV1ZuNtEStwax--D5Hdg0KZiOm4uiOTiMGtfFRrsZiSemALP3PbAH5KrtwFCNdRaZwxlOFLLvyTHV1MoxOPWiTRbitV4tN0Crp-QOTsTtDHQ4_pkGgRV-m9z_GEu4q9YD5HaM2X0u5jalIk0q8jwUUGWHfNR0gqQIhF6");'></div>
+<div class="flex flex-1 flex-col">
+<p class="text-base font-bold leading-normal">Spinach</p>
+<p class="text-sm font-medium leading-normal text-urgent">Expires in 3 days</p>
+<p class="text-sm font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">1 bag</p>
+</div>
+</div>
+<button class="w-full text-center py-3 px-4 rounded-full bg-primary text-white text-base font-bold leading-normal tracking-[-0.015em] hover:bg-primary/90 transition-colors">Find Recipes</button>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-black/20 p-4 rounded-lg">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-[60px] shrink-0" data-alt="A glass of milk next to a milk carton" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIFFbUokDptCs4txplQTe5pPw9GQINjE7_I0I7CQ5SUed1V7VKym3o3NX5HZtvTkHnoYNcPi7mfSJ0Nnzb19UCZOeRsqOHuxUHh6TsNCLy5t0B3pX-2PDhJQbAIO8fR-RP8nru5oNURLZ6Y669kvCtrEQfQn0TMaDG0Ca2ZID5XBxWys5aldHB8zrPYsb1-gHhFSWUOgKbQoFIb2crYcx3Yxbfwe9FRz8N6JZ0QnrrfmY6qkKBWNFMH5xwiqmLQx6O5neHLShbLH-F");'></div>
+<div class="flex flex-1 flex-col">
+<p class="text-base font-bold leading-normal">Milk</p>
+<p class="text-sm font-medium leading-normal text-warning">Expires in 4 days</p>
+<p class="text-sm font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">1/2 gallon</p>
+</div>
+</div>
+<button class="w-full text-center py-3 px-4 rounded-full bg-primary/20 dark:bg-primary/30 text-primary text-base font-bold leading-normal tracking-[-0.015em] hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">Find Recipes</button>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-black/20 p-4 rounded-lg">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-[60px] shrink-0" data-alt="A ripe mango with a leaf" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnbMvAS6mKk45TtVOnALlq8zLOX5ZJwkVijvsQtcLt2zqi2aF3n9khofk_J3OPm0HU3E2xjBd5Mw49o_T_9ROsf4FJWQNr6t7H3cEpnqckTE2aY7VksboLedemVPsQ_n-Ntt2D_0Bj01cPmOdmwssNArY5rYLkv92pq2pL2KNZCaaJe9NDXvcV-pgLkFdVxmJnYSyQP_VjB4FULuJnR8nzoL0VBJWw4dd3Xd320SDmcoGoe5aPPD7ayc6T0pKBgXGBTdYikyDJevmA");'></div>
+<div class="flex flex-1 flex-col">
+<p class="text-base font-bold leading-normal">Mango</p>
+<p class="text-sm font-medium leading-normal text-warning">Expires in 5 days</p>
+<p class="text-sm font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">2 items</p>
+</div>
+</div>
+<button class="w-full text-center py-3 px-4 rounded-full bg-primary/20 dark:bg-primary/30 text-primary text-base font-bold leading-normal tracking-[-0.015em] hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">Find Recipes</button>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-black/20 p-4 rounded-lg">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-[60px] shrink-0" data-alt="A head of fresh green lettuce" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuw9rajGvmyKpfQvpLUhQ3ZZOMvImcyJguoAvtZa98-Nwtd3DpG77rHRv6gV04CO36m6U8M0NHQL2JDurOfggDMb4HBT447WTHIPrwdE8FFq1GSG6Oy-JzJZMGiYd2AFykkagH3Ub55MbYmPZvu7e-C-y_UNcPSvW9VbRqjghMuicWMoKYKhUDODK5OMAaFWcw89OkHEuyTZrK8iPh6IwEqXUguP54eWuV7abZPcBZoxS7UFplgv_DOpRWeLE-PtP7Z0cBxdWn1GY7");'></div>
+<div class="flex flex-1 flex-col">
+<p class="text-base font-bold leading-normal">Lettuce</p>
+<p class="text-sm font-medium leading-normal text-text-secondary-light dark:text-text-secondary-dark">Expires in 6 days</p>
+<p class="text-sm font-normal leading-normal text-text-secondary-light dark:text-text-secondary-dark">1 head</p>
+</div>
+</div>
+<button class="w-full text-center py-3 px-4 rounded-full bg-primary/20 dark:bg-primary/30 text-primary text-base font-bold leading-normal tracking-[-0.015em] hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">Find Recipes</button>
+</div>
+</main>
+</div>
+
+</body></html>
