@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - Recipe Discovery App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#84A98C", // Sage Green
+              "background-light": "#FAF8F1", // Off-white/Cream
+              "background-dark": "#102216",
+              "text-light": "#3D405B", // Charcoal
+              "text-dark": "#F4F1DE", // Light Grey
+              "input-bg-light": "#F4F1DE",
+              "input-bg-dark": "#2a3b2f",
+              "border-light": "#DCD9C8",
+              "border-dark": "#3a4c40",
+            },
+            fontFamily: {
+              "display": ["Be Vietnam Pro", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col font-display overflow-x-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover opacity-30 dark:opacity-10" data-alt="A blurred, top-down view of fresh vegetables and ingredients on a rustic kitchen counter." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBZsN-HkJMA33jd5Z_IQnYwqNHg92f3USqx-JDQ2COeWZPre65NQwC-b_pLLD9bFRaPC6SZig9FgRx24EOiCyU8_c5jlAJ2cZ3XvB44QgbSfjLa5WR11nw15Z0POYPnm8CXasZJ5iAJzAZasC_n2p68G-ihVTpeG6-rFTYfpnv5lxwnprZ-1jHAvtteZVx8J08_1iO70Y1W9sVfjvBP61Zz6VqErCWU3vsHUYBPMSgWEbjUt7EHS_85Y51QI08Ifo-GfSHIM30GChI");'></div>
+</div>
+<div class="relative z-10 flex h-full grow flex-col">
+<div class="flex flex-1 items-center justify-center p-4 sm:p-6 lg:p-8">
+<div class="flex flex-col max-w-md w-full flex-1 gap-8 rounded-xl bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm border border-black/5 dark:border-white/5 p-8 shadow-2xl shadow-black/5">
+<!-- Logo & Heading -->
+<div class="flex flex-col items-center gap-4 text-center">
+<div class="flex items-center justify-center h-14 w-14 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-3xl">
+                                lunch_dining
+                            </span>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-text-light dark:text-text-dark text-3xl font-black leading-tight tracking-[-0.03em]">Welcome Back!</p>
+<p class="text-primary text-base font-normal leading-normal">Log in to your account to continue.</p>
+</div>
+</div>
+<!-- Form -->
+<div class="flex flex-col w-full gap-4">
+<label class="flex flex-col flex-1">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal pb-2">Email or Username</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-input-bg-light dark:bg-input-bg-dark h-12 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50 px-4 text-base font-normal leading-normal" placeholder="Enter your email or username" value=""/>
+</label>
+<div class="flex flex-col gap-2">
+<label class="flex flex-col flex-1">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal pb-2">Password</p>
+<div class="flex w-full flex-1 items-stretch rounded-lg">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-input-bg-light dark:bg-input-bg-dark h-12 placeholder:text-text-light/50 dark:placeholder:text-text-dark/50 px-4 rounded-r-none border-r-0 text-base font-normal leading-normal" placeholder="Enter your password" type="password" value=""/>
+<button aria-label="Toggle password visibility" class="text-text-light/70 dark:text-text-dark/70 flex border border-border-light dark:border-border-dark bg-input-bg-light dark:bg-input-bg-dark items-center justify-center px-4 rounded-r-lg border-l-0 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-base">
+                                            visibility
+                                        </span>
+</button>
+</div>
+</label>
+<a class="text-right text-sm font-medium text-primary hover:underline" href="#">Forgot Password?</a>
+</div>
+<a href="hackathon.html">
+<button class="flex items-center justify-center w-full h-12 px-6 rounded-lg bg-primary text-white text-base font-bold transition-transform active:scale-95 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark">
+                            Log In
+                        </button>
+                        </a>
+</div>
+<!-- Divider -->
+<div class="flex items-center gap-4">
+<hr class="flex-1 border-border-light dark:border-border-dark"/>
+<p class="text-sm font-medium text-text-light/60 dark:text-text-dark/60">OR</p>
+<hr class="flex-1 border-border-light dark:border-border-dark"/>
+</div>
+<!-- Social Logins -->
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex-1 flex items-center justify-center gap-3 w-full h-12 px-6 rounded-lg bg-white dark:bg-zinc-800 text-text-light dark:text-text-dark border border-border-light dark:border-border-dark text-base font-medium transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-700">
+<img alt="Google logo" class="h-5 w-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4XkgpfqdSY-rF10xEFfvzGtMytMk5UZk8Ts3i0NTXE9DEJM6mzn_3Ig6l-apBSj6FyPWSncblBAjtrdnpUT_mX0kV-NyqgbZBp6SVW3-azHbdljjEGrtHv1yJjw0Ji93oDP-46YkAPOP4iXDd-5l0HPDopqpA6jrJfUeqDsMbJXp_-HMaSE_NZonxPxYwYPDZ2HtrTKv_wdkX1Lp2hW-cgbLhA3-h31IWKaITyYr7kc3-OuJzKqsar2y57E8OfMyMUe-dubpFq0w"/>
+                            Continue with Google
+                        </button>
+<button class="flex-1 flex items-center justify-center gap-3 w-full h-12 px-6 rounded-lg bg-black text-white text-base font-medium transition-colors hover:bg-zinc-800">
+<svg class="h-5 w-5 fill-white" viewbox="0 0 496 496" xmlns="http://www.w3.org/2000/svg"><path d="M248,0C111.033,0,0,111.033,0,248S111.033,496,248,496,496,384.967,496,248,384.967,0,248,0ZM354.967,280.667a42.4,42.4,0,0,1-21.333,36.889c-10.1,6.333-25.356,12.311-45.722,12.311-18.1,0-32.911-7.111-44.422-7.111-11.511,0-27.822,6.756-46.089,6.756-18.622,0-36.533-5.244-48.667-15.689-23.111-19.467-37.244-50.489-37.244-88.8,0-43.2,18.267-79.378,51.733-104.4,15.556-11.667,34.867-18.422,55.111-18.422,16.622,0,32.267,5.6,44.422,5.6,12.156,0,29.511-6.267,49.778-6.267,17.733,0,45.244,7.467,45.244,36.533,0,14.711-5.6,28.356-16.356,38.622-11.822,11.156-26.267,18.422-42.244,18.422-1.422,0-2.844,0-4.267-0.178,1.422,0.178,2.844,0.178,4.267,0.178,24.267,0,44.978-14.356,58.822-14.356,5.244,0,10.311,0.356,15.2,0.889A43.3,43.3,0,0,1,354.967,280.667Z M324.7,65.656c12.156-14,19.511-32.622,19.511-53.511a5.66,5.66,0,0,0-.178-1.422c-0.178-.711-0.356-1.422-0.356-2.133a2.41,2.41,0,0,0-.178-.711c-13.422,0.889-28.533,8.156-39.822,19.822-10.8,10.8-19.156,26.933-17.733,42.911,1.067,13.244,9.422,25.356,21.333,33.511C317.9,112.989,312.544,79.522,324.7,65.656Z"></path></svg>
+                            Continue with Apple
+                        </button>
+</div>
+<!-- Sign Up Link -->
+<p class="text-center text-sm text-text-light/80 dark:text-text-dark/80">
+                        Don't have an account? <a class="font-bold text-primary hover:underline" href="#">Sign Up</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</body></html>
